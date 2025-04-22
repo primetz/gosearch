@@ -23,3 +23,13 @@ go.work.sum
 
 # env file
 .env
+
+# Project files
+.idea
+app/.idea
+docker/.idea
+docker/zsh/.config
+docker/zsh/app
+docker/zsh/.zsh_history
+docker/zsh/zsh.d/.oh-my-zsh/cache/*
+!docker/zsh/zsh.d/.oh-my-zsh/cache/.gitkeep

@@ -1,0 +1,21 @@
+networks:
+    proxy:
+        external: true
+
+services:
+
+    go:
+        image: gosearch-go:latest
+        container_name: ${COMPOSE_PROJECT_NAME}.dev
+        build:
+            context: ./go
+            args:
+                GO_VERSION: ${GO_VERSION}
+                USER_ID: ${USER_ID}
+                GROUP_ID: ${GROUP_ID}
+        restart: unless-stopped
+        volumes:
+            - ./../app:/home/gosearch/app:rw
+            - ./zsh:/home/gosearch:rw
+        networks:
+            - proxy
