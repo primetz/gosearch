@@ -25,6 +25,7 @@ go.work.sum
 .idea
 app/.idea
 docker/.idea
+docker/zsh/.cache
 docker/zsh/.config
 docker/zsh/app
 docker/zsh/.zsh_history
