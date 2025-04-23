@@ -29,5 +29,5 @@ docker/zsh/.cache
 docker/zsh/.config
 docker/zsh/app
 docker/zsh/.zsh_history
-docker/zsh/zsh.d/.oh-my-zsh/cache/*
-!docker/zsh/zsh.d/.oh-my-zsh/cache/.gitkeep
+docker/zsh/.oh-my-zsh/cache/*
+!docker/zsh/.oh-my-zsh/cache/.gitkeep
